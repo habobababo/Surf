@@ -7,36 +7,37 @@ SURF
 
 
 ----------
-# <i class="icon-file"></i> Developer documentation
+#Developer documentation
 -------------
-<i class="icon-th-list">Serverside hooks:
+#HOOKS
+Serverside hooks:
 >**Surf_PlayerLoadOut** Calls the loadout of the returned player || returns ply<br>
 **Surf_NewRound** Calls when the new round starts<br>
 **Surf_RoundEnd** Calls the roundend || returns winner as int<br>
 **Surf_FastestPlayer** Calls with roundend|| returns fastest ply on map
 
 
-<i class="icon-user">Clientside hooks:
+Clientside hooks:
 >
 
-<i class="icon-user"><i class="icon-th-list">Shared hooks:
+Shared hooks:
 
 >**Surf_Initialize** Calls when the gamemode is initialized<br>
 
-*Functions:*
-SHARED:
+#FUNCTIONS:
+**SHARED:**
 >**PLAYER:IsGhost()** Returns true or false (!redie)<br>
 
 SERVER:
->**PLAYER:LoadOut()** Forces the LoadOut on ply
-**PLAYER:ResetStats()** Sets Kills and Deaths to 0
-**PLAYER:ToggleGhost()** Toggles between Ghost and normal, does not revive!
-**PLAYER:RespawnGhost()** Use :Spawn() on Ghost, teleports to spawn
-**PLAYER:SendTopSpeed()** Sends topspeed to client
+>**PLAYER:LoadOut()** Forces the LoadOut on ply<br>
+**PLAYER:ResetStats()** Sets Kills and Deaths to 0<br>
+**PLAYER:ToggleGhost()** Toggles between Ghost and normal, does not revive!<br>
+**PLAYER:RespawnGhost()** Use :Spawn() on Ghost, teleports to spawn<br>
+**PLAYER:SendTopSpeed()** Sends topspeed to client<br>
 
 
 ----------
-# <i class="icon-pencil"></i> Configuration
+#Configuration
 ----------
 ### Concommands for clients<br>
 <i class="icon-th-list">Admin concommands:
@@ -45,10 +46,10 @@ SERVER:
 **surf_restartround** restarts the round<br>
 **surf_save** saves the permanent weapons after they are placed
 
-<i class="icon-user">User concommands
->**surf_teamchange** Opens F1 menu, the team choose menu.
-**Surf_DropWeapon** Drops the current weapon.
-**motd** or **surf_motd** Shows message of the day<br>
+User concommands
+>**surf_teamchange** Opens F1 menu, the team choose menu.<br>
+**Surf_DropWeapon** Drops the current weapon.<br>
+**motd** or **surf_motd** Shows message of the day
 
 
 
